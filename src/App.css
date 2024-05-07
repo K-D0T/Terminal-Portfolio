@@ -1,0 +1,122 @@
+.App {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  background: #282c34;
+  font-family: "Courier New", monospace;
+  white-space: pre;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#terminal {
+  background: black;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  max-width: 800px;
+  max-height: 500px;
+  min-width: 300px;
+  min-height: 200px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to start from the top */
+  overflow-x: hidden;
+  overflow: auto;
+  scrollbar-width: none; /* For Firefox */
+}
+
+.terminal::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari and Edge */
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #00FF00;
+}
+
+.output-text {
+  color: #FFD700; /* Gold color for output text, ensuring it stands out */
+
+}
+
+.command {
+  color: #00FF00; /* White for the actual command entered */
+  
+}
+
+.text, .list, .link {
+  color: #FFA500; /* Orange for different types of text outputs */
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+
+
+input[type="text"] {
+  padding: 5px 10px;
+  font-family: "Courier New", monospace;
+  white-space: pre;
+  background-color: black; /* Ensures the background color matches your terminal */
+  font-size: inherit;
+  color: #00FF00;
+  border: none;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+
+.prompt {
+  white-space: nowrap; /* Prevents the prompt from wrapping */
+  color: #00FF00; /* Sets the prompt color */
+}
+
+.terminal-header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #282c34;
+  border: solid 1px;
+  border-radius: 5px 5px 0 0;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+.terminal-header-title {
+  color: #FFD700;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terminal-header-buttonred {
+  padding: 3px;
+}
+
+.terminal-header-buttonyellow {
+  padding: 3px;
+}
+.terminal-header-buttongreen {
+  padding: 3px;
+}
+
+
